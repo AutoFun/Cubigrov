@@ -16,4 +16,14 @@
     <color name="text_topbar">#694E42</color>
     <color name="div_white">#E5E5E5</color>
 
+
+    <color name="white_background">#FFFFFF</color>
+    <color name="tab_checked">#85FFDD</color>
+    <color name="tab_unchecked">#8a8a8a</color>
+    <color name="label">#6186A1</color>
+    <color name="demoLabel">#97BDD8</color>
+    <color name="tab_1">#85FFDD</color>
+    <color name="tab_2">#D98EFF</color>
+    <color name="tab_3">#C6FCA7</color>
+
 </resources>

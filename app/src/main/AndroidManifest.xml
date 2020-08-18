@@ -27,9 +27,13 @@
 
         <activity android:name=".sensor.sensorData"/>
 
+        <activity android:name=".setting.setting"/>
 
-        <activity android:name=".garden">
-        </activity>
+        <activity android:name=".garden"/>
+
+        <activity android:name=".showData.getPlantsData"/>
+
+        <activity android:name=".showData.getGardenData"/>
 
         <activity android:name=".user.LoginActivity">
             <intent-filter>

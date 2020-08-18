@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/LD_dingzhileidatu" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/LD_jibenleidatu" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/YY_day_end" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/YY_end_user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/YY_new_user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/YY_province" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/YY_pv_uv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/chalk.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/echarts.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/myTheme.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/cubigrov/adapter/MyFragmentPagerAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_left.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/shape_background.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/shape_qiche.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/shape_yunyin.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/tab_better_normal.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/tab_better_pressed.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/tab_channel_normal.png" charset="UTF-8" />

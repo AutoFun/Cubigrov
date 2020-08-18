@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <style>
+        html,body{
+            width:100%;
+            height:100%;
+            margin: 0;
+	        padding: 0;
+
+        }
+    </style>
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<!-- create a Dom as a prepartion for ECharts -->
+<div id="main" style="width: 100%;height:100%;"></div>
+<!-- Import a ECharts file -->
+
+<script src="myTheme.js"></script>
+<script type="text/javascript">
+
+    var myChart = echarts.init(document.getElementById('main'), 'myTheme');
+
+    option = {
+    title: {
+        show:true,
+        text: 'Garden1 data',
+        textStyle: {
+            fontSize: 12,
+            fontWeight: 'bolder',
+            color: '#FFFFFF'
+        },
+        x: '5',
+        y: '5'
+    },
+    legend: {
+        data: ['plants1', 'platns2'],
+        x: 'left',
+        y: 'bottom',
+        orient: 'vertical',
+        itemHeight: 8,
+    },
+    tooltip: {},
+    grid: {
+        x: 40,
+        y: 40,
+        x2: 20,
+        y2: 60,
+    },
+    radar: {
+        // shape: 'circle',
+        name: {
+            textStyle: {
+                color: '#fff',
+                backgroundColor: '#999',
+                borderRadius: 3,
+                padding: [3, 5]
+           }
+        },
+        indicator: [
+           { name: 'Humidity', max: 6500},
+           { name: 'PH', max: 16000},
+           { name: 'Moisture', max: 30000},
+           { name: 'Light', max: 38000},
+           { name: 'Water', max: 52000},
+           { name: '市场', max: 25000}
+        ]
+    },
+    series: [{
+        name: 'Plants1 vs Plants2',
+        type: 'radar',
+        // areaStyle: {normal: {}},
+        data : [
+            {
+                value : [4300, 10000, 28000, 35000, 50000, 19000],
+                name : 'platns1'
+            },
+             {
+                value : [5000, 14000, 28000, 31000, 42000, 21000],
+                name : 'plants2'
+            }
+        ]
+    }]
+    };
+
+    myChart.setOption(option);
+
+</script>
+</body>
+</html>

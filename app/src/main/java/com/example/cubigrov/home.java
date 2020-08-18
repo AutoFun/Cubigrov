@@ -12,9 +12,12 @@ import android.widget.TextView;
 
 import com.example.cubigrov.R;
 
-/**
- * Created by Coder-pig on 2015/8/28 0028.
- */
+import com.example.cubigrov.fragment.fragmentAI;
+import com.example.cubigrov.fragment.fragmentGarden;
+import com.example.cubigrov.fragment.fragmentPlants;
+import com.example.cubigrov.fragment.fragmentSetting;
+
+
 public class home extends AppCompatActivity implements View.OnClickListener{
 
     //UI Object
@@ -26,9 +29,11 @@ public class home extends AppCompatActivity implements View.OnClickListener{
     private FrameLayout ly_content;
 
     //Fragment Object
-    private MyFragment fg1,fg2,fg3,fg4;
     private FragmentManager fManager;
-
+    private fragmentAI fg1;
+    private fragmentGarden fg2;
+    private fragmentPlants fg3;
+    private fragmentSetting fg4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,7 +86,7 @@ public class home extends AppCompatActivity implements View.OnClickListener{
                 setSelected();
                 txt_channel.setSelected(true);
                 if(fg1 == null){
-                    fg1 = new MyFragment("1Fragment");
+                    fg1 = new fragmentAI();
                     fTransaction.add(R.id.ly_content,fg1);
                 }else{
                     fTransaction.show(fg1);
@@ -91,7 +96,7 @@ public class home extends AppCompatActivity implements View.OnClickListener{
                 setSelected();
                 txt_message.setSelected(true);
                 if(fg2 == null){
-                    fg2 = new MyFragment("2ragment");
+                    fg2 = new fragmentGarden();
                     fTransaction.add(R.id.ly_content,fg2);
                 }else{
                     fTransaction.show(fg2);
@@ -101,7 +106,7 @@ public class home extends AppCompatActivity implements View.OnClickListener{
                 setSelected();
                 txt_better.setSelected(true);
                 if(fg3 == null){
-                    fg3 = new MyFragment("3Fragment");
+                    fg3 = new fragmentPlants();
                     fTransaction.add(R.id.ly_content,fg3);
                 }else{
                     fTransaction.show(fg3);
@@ -111,7 +116,7 @@ public class home extends AppCompatActivity implements View.OnClickListener{
                 setSelected();
                 txt_setting.setSelected(true);
                 if(fg4 == null){
-                    fg4 = new MyFragment("4Fragment");
+                    fg4 = new fragmentSetting();
                     fTransaction.add(R.id.ly_content,fg4);
                 }else{
                     fTransaction.show(fg4);

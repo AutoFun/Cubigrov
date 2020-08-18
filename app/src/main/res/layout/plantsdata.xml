@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/shape_background"
+    tools:context=".showData.getPlantsData">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/tab_2">
+
+        <ImageView
+            android:id="@+id/iv_operation_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/ic_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="plants data visualization"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl_operation_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardBackgroundColor="@color/label"
+                    android:alpha="0.7"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="4dp"
+                                android:textColor="@color/white_background"
+                                android:textSize="12sp"
+                                android:text="Platform Daily Statistics Board"/>
+
+                            <TextView
+                                android:id="@+id/tv_operation_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dp"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:textColor="@color/white_background"
+                                android:textSize="12sp"
+                                android:text="2020 August 28"/>
+
+                        </LinearLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TableRow
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text=""/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="garden"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="plants"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="hardware"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="day value"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="122"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="2580"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="1560"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="day rate"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="2.5%"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="2.3%"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="1.5%"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="week rate"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="-0.5%"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="-0.2%"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="-0.1%"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="month rate"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="3.1%"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="2.1%"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="3.2%"/>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="month value"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="3102"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="32402"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="@color/white_background"
+                                    android:textSize="12sp"
+                                    android:text="2602"/>
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="4dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardBackgroundColor="@color/label"
+                        android:layout_marginRight="2dp"
+                        android:alpha="0.7"
+                        app:cardCornerRadius="4dp"
+                        android:layout_weight="1">
+
+                        <com.example.cubigrov.showData.ArcView
+                            android:id="@+id/hardware_battery"
+                            android:layout_width="115dp"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardBackgroundColor="@color/label"
+                        android:layout_marginLeft="2dp"
+                        android:alpha="0.7"
+                        app:cardCornerRadius="4dp"
+                        android:layout_weight="1">
+
+                        <com.example.cubigrov.showData.ArcView
+                            android:id="@+id/mobile_phone_battery"
+                            android:layout_width="115dp"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="235dp"
+                    android:layout_marginTop="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardBackgroundColor="@color/label"
+                    android:alpha="0.8">
+
+                    <WebView
+                        android:id="@+id/wv_operation_new_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardBackgroundColor="@color/label"
+                    android:alpha="0.8">
+
+                    <WebView
+                        android:id="@+id/wv_operation_pv_uv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardBackgroundColor="@color/label"
+                    android:alpha="0.8">
+
+                    <WebView
+                        android:id="@+id/wv_operation_province"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardBackgroundColor="@color/label"
+                    android:alpha="0.8">
+
+                    <WebView
+                        android:id="@+id/wv_operation_end_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_marginTop="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardBackgroundColor="@color/label"
+                    android:alpha="0.8">
+
+                    <WebView
+                        android:id="@+id/wv_operation_day_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>
