@@ -21,7 +21,7 @@
  -getData and showData methods
  -data visualization programming
  -AI features 
-
+ -Server configuration issues
 devices' access
 
 
