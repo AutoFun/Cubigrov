@@ -1,5 +1,8 @@
-#####  V1.0.1
+### Cubigrov
+---
 
+#####  V1.0.1
+---
 - login function
 - create basic fragments 
 - combine  old version demo
@@ -8,7 +11,7 @@
 
 
 ##### V1.0.2
-
+---
 - import UI background pictures
 - import Icons
 - optimization on login part 
@@ -17,13 +20,17 @@
  
 
 
- ##### difficulties
+#### difficulties
+ ---
  - getData and showData methods
+ ---
  - data visualization programming
+ ---
  - AI features 
+ ---
  - Server configuration issues
- 
-devices' access
+ ---
+ - devices' access
 
 
 
