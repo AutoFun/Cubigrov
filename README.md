@@ -1,5 +1,4 @@
-# Cubigrov
-#####  V1.01
+#####  V1.0.1
 
 - login function
 - create basic fragments 
@@ -8,14 +7,22 @@
 
 
 
-##### V1.02
+##### V1.0.2
 
 - import UI background pictures
 - import Icons
 - optimization on login part 
+- simple devices' access
+- create specific function cardview in every fragment
+ 
 
 
-
-difficulties
+ ##### difficulties
+ -getData and showData methods
+ -data visualization programming
+ -AI features 
 
 devices' access
+
+
+
