@@ -10,7 +10,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_instance_yunying"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="150dp"
         android:layout_marginBottom="4dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -26,8 +26,8 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="left|center_vertical"
                 android:layout_marginLeft="16dp"
                 android:src="@drawable/load" />
@@ -63,7 +63,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_instance_qiche"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="150dp"
         android:layout_marginBottom="4dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -79,8 +79,8 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="160dp"
-                android:layout_height="160dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="left|center_vertical"
                 android:layout_marginLeft="16dp"
                 android:src="@drawable/load" />

@@ -66,7 +66,7 @@
            { name: 'Moisture', max: 30000},
            { name: 'Light', max: 38000},
            { name: 'Water', max: 52000},
-           { name: '市场', max: 25000}
+
         ]
     },
     series: [{

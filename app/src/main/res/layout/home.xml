@@ -51,7 +51,7 @@
             android:padding="5dp"
             android:text="@string/tab_menu_alert"
             android:textColor="@drawable/tab_menu_text"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/txt_message"
@@ -65,7 +65,7 @@
             android:padding="5dp"
             android:text="@string/tab_menu_profile"
             android:textColor="@drawable/tab_menu_text"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/txt_better"
@@ -79,7 +79,7 @@
             android:padding="5dp"
             android:text="@string/tab_menu_pay"
             android:textColor="@drawable/tab_menu_text"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/txt_setting"
@@ -93,7 +93,7 @@
             android:padding="5dp"
             android:text="@string/tab_menu_setting"
             android:textColor="@drawable/tab_menu_text"
-            android:textSize="16sp"/>
+            android:textSize="12sp"/>
 
     </LinearLayout>
 

@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_white"
     tools:context=".user.RegisterActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,8 +16,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="Cubigrov!"
-            android:textSize="30dp"
+            android:text="Cubigrov"
+            android:textSize="40dp"
             android:textStyle="bold" />
 
 
@@ -23,14 +25,15 @@
             android:id="@+id/load"
             android:layout_width="match_parent"
             android:layout_height="241dp"
-            android:contentDescription=""
             app:layout_constraintBottom_toTopOf="@+id/guideline2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline"
             app:layout_constraintVertical_bias="0.472"
-            app:srcCompat="@drawable/load" />
+            app:srcCompat="@drawable/load"
+            android:contentDescription="@string/todo"
+            />
 
         <TableLayout
             android:layout_width="fill_parent"
@@ -79,11 +82,18 @@
                 <TextView />
 
                 <LinearLayout >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="         "/>
+
+
                     <Button
                         android:id="@+id/Register"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
-                        android:text="login" />
+                        android:background="@color/tab_2"
+                        android:text="Register" />
                 </LinearLayout>
             </TableRow>
         </TableLayout>

@@ -27,12 +27,14 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textColor="#FFFFFF"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:text="Cubigrov_AI_feature"/>
 
     </RelativeLayout>
 
-
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -101,5 +103,5 @@
         android:layout_gravity="center_horizontal" />
 
             </LinearLayout>
-
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>
