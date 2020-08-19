@@ -1,6 +1,6 @@
 ### Cubigrov
 
-[Our Website]: http://mack.stu1688.com/cscs/7/home.html
+[Our Website]: {http://mack.stu1688.com/cscs/7/home.html}
 
 
 
