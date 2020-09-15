@@ -5,27 +5,32 @@
     tools:context=".home">
 
     <RelativeLayout
-        android:id="@+id/ly_top_bar"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:background="@color/bg_topbar">
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:background="#8000FF">
+
+        <ImageView
+            android:id="@+id/sensordata_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/ic_left"/>
 
         <TextView
-            android:id="@+id/txt_topbar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:gravity="center"
-            android:textSize="18sp"
-            android:textColor="@color/text_topbar"
-            android:text="Cubigrov"/>
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2px"
-            android:background="@color/div_white"
-            android:layout_alignParentBottom="true"/>
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:text="HOME"/>
 
     </RelativeLayout>
 
@@ -49,9 +54,9 @@
             android:drawableTop="@drawable/tab_menu_channel"
             android:gravity="center"
             android:padding="5dp"
-            android:text="@string/tab_menu_alert"
-            android:textColor="@drawable/tab_menu_text"
-            android:textSize="12sp" />
+            android:text="Home"
+            android:textColor="#8000FF"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txt_message"
@@ -63,9 +68,9 @@
             android:drawableTop="@drawable/tab_menu_message"
             android:gravity="center"
             android:padding="5dp"
-            android:text="@string/tab_menu_profile"
-            android:textColor="@drawable/tab_menu_text"
-            android:textSize="12sp" />
+            android:text="Garden"
+            android:textColor="#8000FF"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txt_better"
@@ -77,9 +82,9 @@
             android:drawableTop="@drawable/tab_menu_better"
             android:gravity="center"
             android:padding="5dp"
-            android:text="@string/tab_menu_pay"
-            android:textColor="@drawable/tab_menu_text"
-            android:textSize="12sp" />
+            android:text="Data"
+            android:textColor="#8000FF"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/txt_setting"
@@ -91,9 +96,9 @@
             android:drawableTop="@drawable/tab_menu_setting"
             android:gravity="center"
             android:padding="5dp"
-            android:text="@string/tab_menu_setting"
-            android:textColor="@drawable/tab_menu_text"
-            android:textSize="12sp"/>
+            android:text="Archive"
+            android:textColor="#8000FF"
+            android:textSize="20sp"/>
 
     </LinearLayout>
 

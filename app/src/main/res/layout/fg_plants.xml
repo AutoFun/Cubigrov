@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".fragment.fragmentPlants">
 
-    clr
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_plants"

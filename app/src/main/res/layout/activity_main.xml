@@ -12,24 +12,21 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="Cubigrov"
-            android:textSize="40dp"
-            android:textStyle="bold" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical">
+                </LinearLayout>
         <ImageView
             android:id="@+id/load"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +34,16 @@
             app:srcCompat="@drawable/load"
             android:contentDescription="@string/todo"
              />
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Welcome to
+                 Cubigrov !"
+                android:textSize="35dp"
+                android:textColor="#000000"
+                 />
         </LinearLayout>
         <TableLayout
             android:layout_width="match_parent"
@@ -51,14 +57,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Username："
-                    android:textColor="#0B0909"
-                    android:textSize="15sp" />
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/username"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Please input your username!" />
+                    />
             </TableRow>
 
             <TableRow>
@@ -68,57 +74,98 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Password："
-                    android:textColor="#0E0C0C"
-                    android:textSize="15sp" />
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/password"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Please input your password！"
                     android:autofillHints="" />
             </TableRow>
-
-            <TableRow>
-                <TextView />
-
-                <LinearLayout>
-
-
-                    <Button
-                        android:id="@+id/login"
-                        android:layout_width="70dp"
-                        android:layout_height="wrap_content"
-                        android:background="@color/tab_2"
-                        android:text=" Login " />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="        "/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="        "/>
-
-                    <Button
-                        android:id="@+id/register"
-                        android:layout_width="70dp"
-                        android:layout_height="wrap_content"
-                        android:background="@color/tab_2"
-                        android:text="Register" />
-                </LinearLayout>
-            </TableRow>
         </TableLayout>
-
-
-
         <TextView
-            android:id="@+id/version"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textColor="@color/cardview_dark_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="beta v1.0.1"
-            android:textAlignment="center" />
+            android:textColor="#000000"
+            android:textSize="20sp" />
+            <Button
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/login"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="#7F00FF"
+                android:text="LOGIN"
+                android:textSize="16sp"
+                android:textColor="@color/bg_white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <Button
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/Facebook"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="#3B5998"
+            android:text="Sign in with Facebook"
+            android:textSize="16sp"
+            android:textColor="@color/bg_white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <Button
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/Google"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="#33A7FF"
+            android:text="Sign in with Google"
+            android:textSize="16sp"
+            android:textColor="@color/bg_white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <Button
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/forgotPSWD"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@color/bg_white"
+            android:text="Forgotten password?"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <Button
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/register"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:background="@color/bg_white"
+            android:text="Need a CubiGrov Account? Register "
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+
     </LinearLayout>
 </LinearLayout>

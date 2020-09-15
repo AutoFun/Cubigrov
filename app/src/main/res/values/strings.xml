@@ -1,33 +1,6 @@
 <resources>
     <string name="app_name">Cubigrov</string>
-    <string name="button1">add plants</string>
-    <string name="addPlants">add plants</string>
-    <string name="button2">sign in</string>
-    <string name="username">username</string>
-    <string name="password">password</string>
-    <string name="version">TextView</string>
-    <string name="temperature">Temperature</string>
-    <string name="PH">PH</string>
-    <string name="moisture">Moisture</string>
-    <string name="humidity">Humidity</string>
-    <string name="water">Water</string>
-    <string name="plants_name">plants name</string>
-    <string name="Username">Username</string>
-    <string name="Password">Password</string>
-    <string name="back">back</string>
-    <string name="plants_image">plants_image</string>
-    <string name="load">load</string>
-    <string name="repeat_pd">confirm password</string>
-    <string name="login">login</string>
-    <string name="create_account">Create an account</string>
     <string name="todo">TODO</string>
-    <string name="log_in">log in</string>
-    <string name="sign_in">sign in</string>
-
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-
 
 
     <string name="tab_menu_alert">AI</string>

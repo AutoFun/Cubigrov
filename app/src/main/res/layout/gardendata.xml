@@ -6,17 +6,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
-    android:background="@drawable/shape_background"
+    android:background="#FFFFFF"
     tools:context=".showData.getGardenData">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="72dp"
         android:layout_alignParentTop="true"
-        android:background="@color/tab_2">
+        android:background="#8000FF">
 
         <ImageView
-            android:id="@+id/iv_leida_back"
+            android:id="@+id/sensordata_back"
             android:layout_width="40dp"
             android:layout_height="match_parent"
             android:padding="8dp"
@@ -27,8 +27,15 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:text="My garden statistics"/>
+            android:textSize="16sp"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:text="My garden data"/>
 
     </RelativeLayout>
 
