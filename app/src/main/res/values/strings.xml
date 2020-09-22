@@ -3,10 +3,4 @@
     <string name="todo">TODO</string>
 
 
-    <string name="tab_menu_alert">AI</string>
-    <string name="tab_menu_profile">garden</string>
-    <string name="tab_menu_pay">my plants</string>
-    <string name="tab_menu_setting">setting</string>
-
-
 </resources>

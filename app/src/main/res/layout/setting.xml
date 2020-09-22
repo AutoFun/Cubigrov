@@ -16,7 +16,7 @@
         android:background="#8000FF">
 
         <ImageView
-            android:id="@+id/sensordata_back"
+            android:id="@+id/setting_back"
             android:layout_width="40dp"
             android:layout_height="match_parent"
             android:padding="8dp"
