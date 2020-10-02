@@ -9,8 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cubigrov.R;
-import com.example.cubigrov.TestActivity;
-import com.example.cubigrov.setting.setting;
 import com.example.cubigrov.showData.getPlantsData;
 
 import androidx.annotation.RequiresApi;
@@ -43,7 +41,7 @@ public class fragmentPlants extends Fragment {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), TestActivity.class));
+                startActivity(new Intent(getContext(), getPlantsData.class));
             }
         });
     }

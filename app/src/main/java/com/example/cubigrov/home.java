@@ -10,10 +10,8 @@ import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.example.cubigrov.R;
-
 import com.example.cubigrov.fragment.fragmentAI;
-import com.example.cubigrov.fragment.fragmentGarden;
+import com.example.cubigrov.fragment.fragmentData;
 import com.example.cubigrov.fragment.fragmentPlants;
 import com.example.cubigrov.fragment.fragmentSetting;
 
@@ -22,18 +20,28 @@ public class home extends AppCompatActivity implements View.OnClickListener{
 
     //UI Object
     private TextView txt_topbar;
-    private TextView txt_channel;
-    private TextView txt_message;
-    private TextView txt_better;
-    private TextView txt_setting;
+    private TextView Home ;
+    private TextView Garden ;
+    private TextView Data ;
+    private TextView Archive ;
+
+
     private FrameLayout ly_content;
 
     //Fragment Object
     private FragmentManager fManager;
     private fragmentAI fg1;
-    private fragmentGarden fg2;
-    private fragmentPlants fg3;
+    private fragmentPlants fg2;
+    private fragmentData fg3;
     private fragmentSetting fg4;
+
+    //private fragmentHome fg1;
+    //private fragmentGarden fg2;
+    //private fragmentData fg3;
+    //private fragmentArchive fg4;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,30 +49,30 @@ public class home extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.home);
         fManager = getFragmentManager();
         bindViews();
-        txt_channel.performClick();   //for the first click
+        Home.performClick();   //for the first click
     }
 
     //bingViews
     private void bindViews() {
         txt_topbar = (TextView) findViewById(R.id.txt_topbar);
-        txt_channel = (TextView) findViewById(R.id.txt_channel);
-        txt_message = (TextView) findViewById(R.id.txt_message);
-        txt_better = (TextView) findViewById(R.id.txt_better);
-        txt_setting = (TextView) findViewById(R.id.txt_setting);
+        Home = (TextView) findViewById(R.id.home);
+        Garden = (TextView) findViewById(R.id.garden);
+        Data = (TextView) findViewById(R.id.data);
+        Archive = (TextView) findViewById(R.id.archive);
         ly_content = (FrameLayout) findViewById(R.id.ly_content);
 
-        txt_channel.setOnClickListener(this);
-        txt_message.setOnClickListener(this);
-        txt_better.setOnClickListener(this);
-        txt_setting.setOnClickListener(this);
+        Home.setOnClickListener(this);
+        Garden.setOnClickListener(this);
+        Data.setOnClickListener(this);
+        Archive.setOnClickListener(this);
     }
 
     //reset
     private void setSelected(){
-        txt_channel.setSelected(false);
-        txt_message.setSelected(false);
-        txt_better.setSelected(false);
-        txt_setting.setSelected(false);
+        Home.setSelected(false);
+        Garden.setSelected(false);
+        Data.setSelected(false);
+        Archive.setSelected(false);
     }
 
     //hide all the Fragments
@@ -82,9 +90,9 @@ public class home extends AppCompatActivity implements View.OnClickListener{
         FragmentTransaction fTransaction = fManager.beginTransaction();
         hideAllFragment(fTransaction);
         switch (v.getId()){
-            case R.id.txt_channel:
+            case R.id.home:
                 setSelected();
-                txt_channel.setSelected(true);
+                Home.setSelected(true);
                 if(fg1 == null){
                     fg1 = new fragmentAI();
                     fTransaction.add(R.id.ly_content,fg1);
@@ -92,29 +100,29 @@ public class home extends AppCompatActivity implements View.OnClickListener{
                     fTransaction.show(fg1);
                 }
                 break;
-            case R.id.txt_message:
+            case R.id.garden:
                 setSelected();
-                txt_message.setSelected(true);
+                Garden.setSelected(true);
                 if(fg2 == null){
-                    fg2 = new fragmentGarden();
+                    fg2 = new fragmentPlants();
                     fTransaction.add(R.id.ly_content,fg2);
                 }else{
                     fTransaction.show(fg2);
                 }
                 break;
-            case R.id.txt_better:
+            case R.id.data:
                 setSelected();
-                txt_better.setSelected(true);
+                Data.setSelected(true);
                 if(fg3 == null){
-                    fg3 = new fragmentPlants();
+                    fg3 = new fragmentData();
                     fTransaction.add(R.id.ly_content,fg3);
                 }else{
                     fTransaction.show(fg3);
                 }
                 break;
-            case R.id.txt_setting:
+            case R.id.archive:
                 setSelected();
-                txt_setting.setSelected(true);
+                Archive.setSelected(true);
                 if(fg4 == null){
                     fg4 = new fragmentSetting();
                     fTransaction.add(R.id.ly_content,fg4);

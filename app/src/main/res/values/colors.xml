@@ -13,7 +13,6 @@
 
     <color name="white_background">#FFFFFF</color>
     <color name="label">#6186A1</color>
-    <color name="tab_1">#85FFDD</color>
     <color name="tab_2">#D98EFF</color>
 
 </resources>
