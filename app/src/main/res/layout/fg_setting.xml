@@ -7,8 +7,6 @@
     android:orientation="vertical"
     tools:context=".fragment.fragmentSetting">
 
-    clr
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_setting"
         android:layout_width="match_parent"

@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.cubigrov.R;
 import com.example.cubigrov.garden;
+import com.example.cubigrov.mongoDBTest;
 import com.example.cubigrov.sensor.sensorData;
 
 import androidx.annotation.RequiresApi;
@@ -45,7 +46,7 @@ public class fragmentAI extends Fragment {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), sensorData.class));
+                startActivity(new Intent(getContext(), mongoDBTest.class));
             }
         });
     }

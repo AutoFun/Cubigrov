@@ -15,6 +15,7 @@ import com.example.cubigrov.fragment.fragmentData;
 import com.example.cubigrov.fragment.fragmentPlants;
 import com.example.cubigrov.fragment.fragmentSetting;
 
+import com.example.cubigrov.home;
 
 public class home extends AppCompatActivity implements View.OnClickListener{
 
@@ -24,8 +25,6 @@ public class home extends AppCompatActivity implements View.OnClickListener{
     private TextView Garden ;
     private TextView Data ;
     private TextView Archive ;
-
-
     private FrameLayout ly_content;
 
     //Fragment Object

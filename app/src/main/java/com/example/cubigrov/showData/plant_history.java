@@ -5,83 +5,59 @@ import android.os.Build;
 import android.os.Bundle;
 import android.app.Fragment;
 
-import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-import android.view.LayoutInflater;
+
 import android.view.View;
-import android.view.ViewGroup;
+
 
 import com.example.cubigrov.R;
-import com.example.cubigrov.garden;
 import com.example.cubigrov.showData.getGardenData;
 
-public class plant_history extends Fragment {
 
-    View mView;
+public class plant_history extends AppCompatActivity {
 
     private CardView cyclamenCV,aloeCV,cyclamen2CV,gmCV;
 
-    public plant_history() {
-        // Required empty public constructor
-    }
-
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        mView = inflater.inflate(R.layout.planthistory, container, false);
-
-        initViews();
-        return mView;
-    }
-
-
-
-    private void initViews() {
-        cyclamenCV = mView.findViewById(R.id.device);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.planthistory);
+        findViews();
         cyclamenCV.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.M)
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getContext(),getGardenData.class));
+            public void onClick(View v) {
+                Intent intent = new Intent(plant_history.this, getGardenData.class);
+                startActivity(intent);
             }
         });
-
-        aloeCV = mView.findViewById(R.id.sensors);
         aloeCV.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.M)
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getContext(),getGardenData.class));
+            public void onClick(View v) {
+                Intent intent = new Intent(plant_history.this, getGardenData.class);
+                startActivity(intent);
             }
         });
-
-
-        cyclamen2CV = mView.findViewById(R.id.camera);
         cyclamen2CV.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.M)
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getContext(),getGardenData.class));
+            public void onClick(View v) {
+                Intent intent = new Intent(plant_history.this, getGardenData.class);
+                startActivity(intent);
             }
         });
-
-         gmCV= mView.findViewById(R.id.history);
-         gmCV.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.M)
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getContext(),getGardenData.class));
+        gmCV.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(plant_history.this, getGardenData.class);
+                startActivity(intent);
             }
         });
-
-
-
-
-
     }
+
+        private void findViews (){
+            cyclamenCV=findViewById(R.id.Cyclamen);
+            aloeCV=findViewById(R.id.Aloe);
+            cyclamen2CV=findViewById(R.id.Cyclamen2);
+            gmCV=findViewById(R.id.GymnocalyciumMihanovichii);
+        }
+
+
 
 }
 

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:fitsSystemWindows="true"
     android:background="#FFFFFF"
-    tools:context=".showData.getGardenData">
+    tools:context=".showData.plant_history">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -129,7 +129,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="left|center_vertical"
                 android:layout_marginLeft="16dp"
-                android:src="@mipmap/aloe" />
+                android:src="@mipmap/aloe_1"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"

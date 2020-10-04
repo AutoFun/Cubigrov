@@ -11,9 +11,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="72dp"
         android:layout_alignParentTop="true"
-        android:background="@color/tab_2">
+        android:background="#8000FF">
 
         <ImageView
             android:id="@+id/sensordata_back"
@@ -27,8 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:text="Cubigrov_AI_feature"/>
+            android:textSize="40sp"
+            android:text="plants_ID"/>
 
     </RelativeLayout>
 

@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 
 import com.example.cubigrov.R;
 import com.example.cubigrov.garden;
+import com.example.cubigrov.sensor.sensorData;
 import com.example.cubigrov.showData.getGardenData;
 import com.example.cubigrov.showData.plant_history;
 
@@ -65,7 +66,7 @@ public class fragmentData extends Fragment {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(),getGardenData.class));
+                startActivity(new Intent(getContext(), sensorData.class));
             }
         });
 

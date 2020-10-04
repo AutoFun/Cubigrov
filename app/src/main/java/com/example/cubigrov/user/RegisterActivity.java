@@ -14,13 +14,7 @@ import com.example.cubigrov.home;
 import com.example.cubigrov.service.UserService;
 
 import androidx.appcompat.app.AppCompatActivity;
-/**
- * by hagnji{
- *  Register function
- *  Simply realized with SQLite
- *  Need further development
- * }
- */
+
 public class RegisterActivity extends AppCompatActivity {
 
     EditText username;
