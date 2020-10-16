@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cubigrov" >
+
+    <uses-feature
+        android:name="android.hardware.Camera2"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HamburgerIconMenuActivity"
+            android:label="@string/title_activity_hamburger_icon_menu"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".hamburger_icon_menu"
+            android:label="@string/title_activity_hamburger_icon_menu"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".user.RegisterActivity" />
+        <activity android:name=".sensor.displayImage" />
+        <activity android:name=".home" />
+        <activity android:name=".sensor.sensorData" />
+        <activity android:name=".setting.setting" />
+        <activity android:name=".garden" />
+        <activity android:name=".showData.getPlantsData" />
+        <activity android:name=".showData.getGardenData" />
+        <activity android:name=".user.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+    </application>
+
+</manifest>
