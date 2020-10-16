@@ -58,8 +58,10 @@
         android:textSize="30dp"
         android:textColor="#000000"
         />
+
+
     <androidx.cardview.widget.CardView
-        android:id="@+id/Cyclamen"
+        android:id="@+id/CyclamenData"
         android:layout_width="330dp"
         android:layout_height="100dp"
         android:layout_marginBottom="4dp"
@@ -92,7 +94,7 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="11dp"
                     android:layout_marginBottom="16dp"
                     android:text="Cyclamen"
                     android:textColor="#000000"
@@ -107,7 +109,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/Aloe"
+        android:id="@+id/AloeData"
         android:layout_width="330dp"
         android:layout_height="100dp"
         android:layout_marginBottom="4dp"
@@ -154,7 +156,7 @@
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
-        android:id="@+id/Cyclamen2"
+        android:id="@+id/Cyclamen2Data"
         android:layout_width="330dp"
         android:layout_height="100dp"
         android:layout_marginBottom="4dp"
@@ -202,7 +204,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/GymnocalyciumMihanovichii"
+        android:id="@+id/GymnData"
         android:layout_width="330dp"
         android:layout_height="100dp"
         android:layout_marginBottom="4dp"

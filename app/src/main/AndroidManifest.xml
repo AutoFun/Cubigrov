@@ -2,13 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cubigrov" >
 
+
+
     <uses-feature
         android:name="android.hardware.Camera2"
         android:required="true" />
 
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+        android:maxSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -17,16 +21,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name=".HamburgerIconMenuActivity"
-            android:label="@string/title_activity_hamburger_icon_menu"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
-        <activity
-            android:name=".hamburger_icon_menu"
-            android:label="@string/title_activity_hamburger_icon_menu"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
+        <activity android:name=".mongoDBTest" />
         <activity android:name=".user.RegisterActivity" />
         <activity android:name=".sensor.displayImage" />
         <activity android:name=".home" />
@@ -35,7 +30,9 @@
         <activity android:name=".garden" />
         <activity android:name=".showData.getPlantsData" />
         <activity android:name=".showData.getGardenData" />
+        <activity android:name=".showData.plant_history"/>
         <activity android:name=".user.LoginActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

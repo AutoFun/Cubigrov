@@ -62,34 +62,14 @@
                     android:alpha="0.8"
                     app:cardBackgroundColor="@color/label"
                     app:cardCornerRadius="4dp">
-
                     <WebView
                         android:id="@+id/jibenleidatu"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" >
 
                     </WebView>
-
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="360dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginRight="8dp"
-                    android:alpha="0.8"
-                    app:cardBackgroundColor="@color/label"
-                    app:cardCornerRadius="4dp">
-
-                    <WebView
-                        android:id="@+id/dingzhileidatu"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
-
-                    </WebView>
-
-                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
@@ -137,7 +117,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:orientation="horizontal">
+
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="50dp"
@@ -145,10 +126,24 @@
                     android:orientation="horizontal"></LinearLayout>
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/readings"
                     android:layout_width="140dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="GET READINGS" />
+
+                <LinearLayout
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+                <TextView
+                    android:id="@+id/reading_textview"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="TextView" />
 
                 <LinearLayout
                     android:layout_width="36dp"
@@ -156,10 +151,11 @@
                     android:orientation="horizontal"></LinearLayout>
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/health"
                     android:layout_width="135dp"
                     android:layout_height="wrap_content"
-                    android:text="PLANT HEALTH" />
+                    android:layout_gravity="center"
+                    android:text="PLANT Detection" />
 
             </LinearLayout>
 
@@ -178,17 +174,13 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/imageView20"
-                        android:layout_width="20dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/ic_menu_manage" />
+
 
                     <TextView
-                        android:id="@+id/textView19"
+                        android:id="@+id/detection_textview"
                         android:layout_width="230dp"
                         android:layout_height="match_parent"
+                        android:gravity="center"
                         android:layout_weight="1"
                         android:text="TextView" />
 

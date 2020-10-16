@@ -32,20 +32,11 @@ public class fragmentHome extends Fragment {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fg_home, container, false);
 
-        initViews();
+
 
         return mView;
     }
 
-    private void initViews() {
-        HomeCV = mView.findViewById(R.id.cv_home);
-        HomeCV.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.M)
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getContext(), mongoDBTest.class));
-            }
-        });
-    }
+
 
 }

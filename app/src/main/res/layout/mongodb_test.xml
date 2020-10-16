@@ -17,7 +17,7 @@
         android:background="#8000FF">
 
         <ImageView
-            android:id="@+id/setting_back"
+            android:id="@+id/mongo_back"
             android:layout_width="40dp"
             android:layout_height="match_parent"
             android:padding="8dp"
@@ -37,81 +37,17 @@
             android:textColor="#FFFFFF"
             android:textSize="40sp"
             android:text="Mongo Test"/>
-
     </RelativeLayout>
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/mongodb_btn1"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="55dp"
-                android:text="button1" />
-
-
-            <Button
-                android:id="@+id/mongodb_btn2"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="button2" />
-
-            <Button
-                android:id="@+id/mongodb_btn3"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:text="button3"
-                android:layout_gravity="center_horizontal"
-                />
-
-            <Button
-                android:id="@+id/mongodb_btn4"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:text="button4"
-                android:layout_gravity="center_horizontal" />
-
-            <Button
-                android:id="@+id/mongodb_btn5"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:text="button4"
-                android:layout_gravity="center_horizontal"
-                />
-
-            <Button
-                android:id="@+id/mongodb_btn6"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:text="button4"
-                android:layout_gravity="center_horizontal" />
-
-            <Button
-                android:id="@+id/mongodb_btn7"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:text="button4"
-                android:layout_gravity="center_horizontal" />
-
-            <Button
-                android:id="@+id/mongodb_btn8"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:text="button4"
-                android:layout_gravity="center_horizontal" />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+              android:id="@+id/viewer"
+               />
 
 
 
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+
+
 </LinearLayout>

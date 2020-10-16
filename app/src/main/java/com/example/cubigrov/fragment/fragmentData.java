@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cubigrov.R;
+import com.example.cubigrov.mongoDBTest;
 import com.example.cubigrov.sensor.sensorData;
 import com.example.cubigrov.showData.getGardenData;
 import com.example.cubigrov.showData.plant_history;
@@ -21,7 +22,7 @@ public class fragmentData extends Fragment {
 
     View mView;
 
-    private CardView deviceCV,sensorsCV,cameraCV,historyCV;
+    private CardView deviceCV,sensorsCV,cameraCV,historyCV,mongotestCV;
 
     public fragmentData() {
         // Required empty public constructor
@@ -78,12 +79,20 @@ public class fragmentData extends Fragment {
             }
         });
 
-
+        mongotestCV = mView.findViewById(R.id.cv_mongotest);
+        mongotestCV.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), mongoDBTest.class));
+            }
+        });
+    }
 
 
 
     }
 
-}
+
 
 

@@ -101,35 +101,95 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="125dp"
-        android:orientation="horizontal">
-
         <LinearLayout
-            android:layout_width="64dp"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@mipmap/plant_cyclamen_foreground" />
+            android:layout_margin="@dimen/cardview_compat_inset_shadow"
+            >
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@mipmap/plant_tulip_foreground" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cyclamen"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_background"
+                    android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:src="@mipmap/plant_cyclamen_foreground"
+                        tools:src="@mipmap/plant_cyclamen_foreground" />
 
-    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="cyclamen"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tulip"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:src="@mipmap/plant_tulip_foreground"
+                        tools:src="@mipmap/plant_tulip_foreground" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="tulip"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
 
     <TextView
         android:id="@+id/textView5"
@@ -141,37 +201,87 @@
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="99dp"
-        android:orientation="horizontal">
-
         <LinearLayout
-            android:layout_width="67dp"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/cardview_compat_inset_shadow"
+            >
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dandelion"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:src="@mipmap/weed_dandelion_foreground"
+                        tools:src="@mipmap/weed_dandelion_foreground" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="dandelion"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bindweed"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:src="@mipmap/weed_bindweed"
+                        tools:src="@mipmap/weed_bindweed" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="bindweed"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/weed_dandelion_foreground" />
 
-        <LinearLayout
-            android:layout_width="59dp"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="108dp"
-            android:layout_height="match_parent"
-            android:src="@mipmap/weed_bindweed_foreground"
-            tools:src="@mipmap/weed_bindweed" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -189,40 +299,103 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/cardview_compat_inset_shadow"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gumtree"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:src="@mipmap/tree_gumtree"
+                        tools:src="@mipmap/tree_gumtree" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="dandelion"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/paperbark"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white_background"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="25dp"
+                        android:src="@mipmap/tree_paperbark"
+                        tools:src="@mipmap/tree_paperbark" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="bindweed"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="19dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@mipmap/tree_gumtree" />
-
-        <LinearLayout
-            android:layout_width="29dp"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="47dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@mipmap/tree_paperbark" />
-
-        <LinearLayout
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
     </LinearLayout>
+
+
+
 
     </LinearLayout>
     </ScrollView>
