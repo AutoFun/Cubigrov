@@ -7,38 +7,33 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.util.EventLog;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.cubigrov.R;
+import com.example.cubigrov.sensor.displayImage;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * written by dumi 2020 Autunm sesseion.
- * AI feature?
- * Images detecting feature?
- */
-
 public class sensorData extends AppCompatActivity implements SensorEventListener  {
-    private ImageView mBackImageView;
     String currentImagePath = null;
     private static final int IMAGE_REQUEST= 1;
     private TextView ambientValue, lightValue, pressureValue, humidityValue, search;
     private TextView[] valueFields = new TextView[4];
+
+
 
     private final int AMBIENT=0;
     private final int LIGHT=1;
@@ -51,17 +46,14 @@ public class sensorData extends AppCompatActivity implements SensorEventListener
     private Sensor pressureSense;
     private Sensor humiditySense;
 
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sensordata);
-        mBackImageView = findViewById(R.id.sensordata_back);
-        mBackImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        setContentView(R.layout.activity_main);
 
         ambientValue = (TextView)findViewById(R.id.ambient_text);
         valueFields[AMBIENT]=ambientValue;
@@ -76,7 +68,6 @@ public class sensorData extends AppCompatActivity implements SensorEventListener
 
         search = (TextView)findViewById(R.id.search_bar);
     }
-
     public void captureImage(View view){
         Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (cameraIntent.resolveActivity(getPackageManager())!=null){
@@ -93,14 +84,11 @@ public class sensorData extends AppCompatActivity implements SensorEventListener
             }
         }
     }
-
     public void displayImage(View view){
         Intent intent = new Intent(this, displayImage.class);
         intent.putExtra("image_path",currentImagePath);
         startActivity(intent);
     }
-
-
     private File getImageFile()throws IOException{
         String timestamp= new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String imageName = "jpg_"+timestamp+" ";
@@ -201,17 +189,4 @@ public class sensorData extends AppCompatActivity implements SensorEventListener
 
     }
 
-    //set state-bar
-    private void setStatusBar() {
-        if (Build.VERSION.SDK_INT >= 21) {
-            View decorView = getWindow().getDecorView();
-            int option = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
-            decorView.setSystemUiVisibility(option);
-            getWindow().setStatusBarColor(getResources().getColor(R.color.colorPrimary));
-        }
-    }
-
-
 }
-
