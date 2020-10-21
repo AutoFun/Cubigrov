@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cubigrov" >
-
-
-
-    <uses-feature
-        android:name="android.hardware.Camera2"
-        android:required="true" />
-
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="21" />
-
-    <uses-permission android:name="android.permission.INTERNET"/>
+    package="com.example.cubigrov">
 
     <application
         android:allowBackup="true"
@@ -20,7 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
+
         <activity android:name=".mongoDBTest" />
         <activity android:name=".user.RegisterActivity" />
         <activity android:name=".sensor.displayImage" />
@@ -30,9 +19,10 @@
         <activity android:name=".garden" />
         <activity android:name=".showData.getPlantsData" />
         <activity android:name=".showData.getGardenData" />
-        <activity android:name=".showData.plant_history"/>
-        <activity android:name=".user.LoginActivity" >
-
+        <activity android:name=".showData.plant_history" />
+        <activity android:name=".plantsDetail.cyclamenDetail" />
+        <activity android:name=".plantsDetail.tulipDetail" />
+        <activity android:name=".user.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,11 +34,20 @@
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.example.android.fileprovider"
             android:exported="false"
-            android:grantUriPermissions="true" >
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_path" />
         </provider>
     </application>
+
+    <uses-feature
+        android:name="android.hardware.Camera2"
+        android:required="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="21" />
 
 </manifest>

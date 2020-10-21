@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.cubigrov.R;
+import com.example.cubigrov.plantsDetail.cyclamenDetail;
+import com.example.cubigrov.plantsDetail.tulipDetail;
 import com.example.cubigrov.setting.setting;
 
 import androidx.annotation.RequiresApi;
@@ -19,7 +21,7 @@ import androidx.cardview.widget.CardView;
 public class fragmentArchive extends Fragment {
 
     View mView;
-    private CardView settingDataCV;
+    private CardView settingDataCV,cyclamenCV,tulipCV,dandelionCV,bindweedCV,gumtreeCV,paperbarkCV;
 
     public fragmentArchive() {
         // Required empty public constructor
@@ -46,6 +48,62 @@ public class fragmentArchive extends Fragment {
                 startActivity(new Intent(getContext(), setting.class));
             }
         });
+
+        cyclamenCV = mView.findViewById(R.id.cv_cyclamen);
+        cyclamenCV.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), cyclamenDetail.class));
+            }
+        });
+
+        tulipCV = mView.findViewById(R.id.cv_tulip);
+        tulipCV.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), tulipDetail.class));
+            }
+        });
+
+        dandelionCV = mView.findViewById(R.id.cv_dandelion);
+        dandelionCV.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), cyclamenDetail.class));
+            }
+        });
+
+        bindweedCV = mView.findViewById(R.id.cv_bindweed);
+        bindweedCV.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), cyclamenDetail.class));
+            }
+        });
+
+        gumtreeCV = mView.findViewById(R.id.cv_gumtree);
+        gumtreeCV.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), cyclamenDetail.class));
+            }
+        });
+
+        paperbarkCV = mView.findViewById(R.id.cv_paperbark);
+        paperbarkCV.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), cyclamenDetail.class));
+            }
+        });
+
+
     }
 
 }

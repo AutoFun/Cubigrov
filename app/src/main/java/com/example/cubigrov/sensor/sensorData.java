@@ -53,7 +53,7 @@ public class sensorData extends AppCompatActivity implements SensorEventListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.sensordata);
 
         ambientValue = (TextView)findViewById(R.id.ambient_text);
         valueFields[AMBIENT]=ambientValue;
