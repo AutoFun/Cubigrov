@@ -1,7 +1,26 @@
 # Cubigrov
 
+## Tech Stack
+Android Java  
+MongoDB  
+Python   
+Flask  
+Tensorflow  
+Embedded sytem programming  
+Echart  
+
+## Hardware
+
+## Sytem work flow
+
+## Application Prototype
 
 ##
-[Our Website] :https://cubitrovengineerin.wixsite.com/cubigrov
+[Website] :https://cubitrovengineerin.wixsite.com/cubigrov
+
+## Reference
+
+## Copyright
+
 
  
