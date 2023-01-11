@@ -1,4 +1,7 @@
 # Cubigrov
+## Achivements
+Software design & prototype
+Database design & prototype
 
 ## Tech Stack
 Android Java  
