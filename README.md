@@ -14,9 +14,12 @@ Echart
 
 ## Hardware
 
-## Sytem work flow
+## Database design
+
+## System work flow
 
 ## Application Prototype
+
 
 ##
 [Website] :https://cubitrovengineerin.wixsite.com/cubigrov
