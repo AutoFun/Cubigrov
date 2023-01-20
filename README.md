@@ -19,7 +19,8 @@ Apache Echart
 ## System work flow
 
 ## Application Prototype
-
+Take advantages of Cardview to make flexible app pages
+Use Fragments to  
 
 ##
 [Website] :https://cubitrovengineerin.wixsite.com/cubigrov
