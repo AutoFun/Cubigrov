@@ -10,7 +10,7 @@ Python
 Flask  
 Tensorflow  
 Embedded sytem programming  
-Echart  
+Apache Echart  
 
 ## Hardware
 
