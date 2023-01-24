@@ -14,10 +14,10 @@ Apache Echart
 API D/T
 
 ## Hardware
-PH sensor
-Humidity sensor
-Light snesor
-Rasberry Pi & Camera module
+PH sensor  
+Humidity sensor  
+Light snesor  
+Rasberry Pi & Camera module  
 
 ## Database design
 
