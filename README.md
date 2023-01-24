@@ -24,9 +24,9 @@ Rasberry Pi & Camera module
 ## System work flow
 
 ## Application Prototype
-Take advantages of Cardview to make flexible app pages
-Use Fragments to seperate different application features 
-Simple but Functional
+Take advantages of Cardview to make flexible app pages  
+Use Fragments to seperate different application features   
+Simple but Functional  
 ##
 [Website] :https://cubitrovengineerin.wixsite.com/cubigrov  
 ![image](https://user-images.githubusercontent.com/42330996/214218029-d312e876-1899-4585-ad0b-b8bc4d6d669d.png)
