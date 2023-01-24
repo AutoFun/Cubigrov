@@ -1,4 +1,5 @@
 # Cubigrov
+CubiGrov is a smart garden system that monitors and tracks environmental conditions, helping your plants thrive.  
 ## Achivements
 Software design & prototype
 Database design & prototype
